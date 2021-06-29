@@ -1,8 +1,11 @@
 <template>
 	<view class="container">
 		
-		<view class="intro">本项目已包含uni ui组件，无需import和注册，可直接使用。在代码区键入字母u，即可通过代码助手列出所有可用组件。光标置于组件名称处按F1，即可查看组件文档。</view>
-		<text class="intro">详见：</text>
+  <view class="uni-flex uni-row">
+                <view class="box" style="background-color: #007AFF;">A</view>
+                <view class="box" style="background-color: #4CD964;">B</view>
+                <view class="box" style="background-color: #F0AD4E;">C</view>
+            </view>
 		<uni-link :href="href" :text="href"></uni-link>
 	</view>
 </template>
@@ -25,5 +28,9 @@
 		padding: 20px;
 		font-size: 14px;
 		line-height: 24px;
+	}
+	.box{
+		width: auto;
+		height: 100px;
 	}
 </style>
